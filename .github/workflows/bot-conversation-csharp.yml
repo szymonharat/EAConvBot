@@ -61,11 +61,7 @@ jobs:
           name: .net-app
   # Deploy to Azure Web apps
       - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/login@v1
-        with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-        
+        id: deploy-to-webapp      
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}  # Replace with your app name
