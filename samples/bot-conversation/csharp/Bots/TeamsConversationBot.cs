@@ -170,13 +170,14 @@ namespace Microsoft.BotBuilderSamples.Bots
             var teamsChannelId = turnContext.Activity.TeamsGetChannelId();
             var serviceUrl = turnContext.Activity.ServiceUrl;
             var credentials = new MicrosoftAppCredentials(_appId, _appPassword);
+            var TextToShow = turnContext.Activity.Text;
             ConversationReference conversationReference = null;
 
             var members = await GetPagedMembers(turnContext, cancellationToken);
 
             foreach (var teamMember in members)
             {
-                var proactiveMessage = MessageFactory.Text($"Hello {teamMember.GivenName} {teamMember.Surname}. I'm a Teams conversation bot.");
+                var proactiveMessage = MessageFactory.Text($"Hello {teamMember.GivenName} {teamMember.Surname}. I'm Enterprise Architecure bot. {TextToShow}");
 
                 var conversationParameters = new ConversationParameters
                 {
