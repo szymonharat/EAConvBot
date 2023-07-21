@@ -5,7 +5,7 @@
   "id": "761f8dc3-55c0-43b1-8d83-5ba7518e18bd",
   "packageName": "com.teams.sample.teamsconversationbot",
   "developer": {
-    "name": "TeamsConversationBot",
+    "name": "Architecture Community Bot",
     "websiteUrl": "https://www.microsoft.com",
     "privacyUrl": "https://www.teams.com/privacy",
     "termsOfUseUrl": "https://www.teams.com/termsofuser"
@@ -15,12 +15,12 @@
     "color": "icon-color.png"
   },
   "name": {
-    "short": "TeamsConversationBot",
-    "full": "TeamsConversationBot"
+    "short": "Architecture Community Bot",
+    "full": "Architecture Community Bot"
   },
   "description": {
-    "short": "TeamsConversationBot",
-    "full": "TeamsConversationBot"
+    "short": "Architecture Community Bot",
+    "full": "Architecture Community Bot"
   },
   "accentColor": "#FFFFFF",
   "bots": [
@@ -44,14 +44,6 @@
             "team"
           ],
           "commands": [
-            {
-              "title": "MentionMe",
-              "description": "Sends message with @mention of the sender"
-            },
-            {
-              "title": "Show Welcome",
-              "description": "Shows the welcome card"
-            },
             {
               "title": "MessageAllMembers",
               "description": "Send 1 to 1 message to all members of the current conversation"

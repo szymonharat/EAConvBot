@@ -177,7 +177,7 @@ namespace Microsoft.BotBuilderSamples.Bots
 
             foreach (var teamMember in members)
             {
-                var proactiveMessage = MessageFactory.Text($"Hello {teamMember.GivenName} {teamMember.Surname}. I'm Architecure Community bot. {TextToShow.Substring(17)}");
+                var proactiveMessage = MessageFactory.Text($"Hello {teamMember.GivenName} {teamMember.Surname}. I'm Architecure Community Bot. {TextToShow.Substring(17)}");
 
                 var conversationParameters = new ConversationParameters
                 {
